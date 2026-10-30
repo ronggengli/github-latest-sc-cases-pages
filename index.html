@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Github_Latest_SC_Cases</title>
+<meta name="description" content="Github_Latest_SC_Cases：自動整理司法院公開裁判書，並以 Gmail API 寄送每日摘要信給應用程式擁有者本人。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Github_Latest_SC_Cases</h1>
+<p>Github_Latest_SC_Cases 是一個個人使用的自動化工具，每日從司法院公開資料開放平臺取得最新刑事裁判書，依關鍵字（例如通訊保障及監察法、數位證據、科技偵查等）篩選，產生摘要後，以電子郵件寄送給應用程式擁有者本人。</p>
+
+<h2>功能說明</h2>
+<ul>
+<li>透過司法院「裁判書開放資料」API 取得公開之裁判書。</li>
+<li>依關鍵字篩選出相關案件，並以 Google Gemini API 產生重點摘要。</li>
+<li>透過 Gmail API 將摘要信寄出，收件者為應用程式擁有者本人。</li>
+</ul>
+
+<h2>Google 使用者資料的使用</h2>
+<p>本應用程式僅申請一項 Google OAuth 權限範圍：<code>https://www.googleapis.com/auth/gmail.send</code>（僅限寄送電子郵件）。</p>
+<ul>
+<li><strong>不會</strong>讀取、搜尋、列出或刪除任何信件、聯絡人或其他 Google 帳號資料。</li>
+<li>該權限僅用於以擁有者本人的 Gmail 帳號寄出上述每日摘要信。</li>
+<li>本應用程式為個人使用，不對外提供服務，也不會處理其他使用者的資料。</li>
+</ul>
+
+<h2>相關連結</h2>
+<ul>
+<li><a href="privacy.html">隱私權政策</a></li>
+</ul>
+
+<h2>聯絡方式</h2>
+<p>如有任何問題，請來信：<a href="mailto:ronggengli@gmail.com">ronggengli@gmail.com</a></p>
+</main>
+</body>
+</html>
